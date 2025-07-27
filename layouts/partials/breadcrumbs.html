@@ -15,5 +15,8 @@
     {{- end }}
 
     {{- end -}}
+    {{- print "&nbsp;»&nbsp;" | safeHTML -}} <span class="breadcrumbs-current">{{ .Title }}</span>
 </div>
+{{- partial "post-toc.html" (dict "Current" .) }}
+<hr />
 {{- end -}}
